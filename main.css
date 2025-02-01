@@ -1,0 +1,120 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    #main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Onest", serif;
+        >div{
+            &:nth-of-type(1){
+                display: flex;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                >div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 100px;
+                    >img{
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+                >figure{
+                    width: 60%;
+                    height: 600px;
+                    overflow: hidden;
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        cursor: zoom-in;
+                    }
+                }    
+            }
+            &:nth-of-type(2){
+                width: 50%;
+                padding-left: 50px;
+                padding-right: 100px;   
+                *{
+                    margin-bottom: 15px;
+                }     
+                >div{
+                    &:first-of-type{
+                        >a{
+                            color: black;
+                        }
+                    }
+                }
+                #item{
+                    height: 100px;
+                    >img{
+                        height: 100px;
+                        width: 80px;
+                        border: 2px solid black;
+                    }
+                }
+                #select{
+                    width: 100%;
+                    border: 1px solid black;
+                    height: 50px;
+                }
+                #submit{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0px;
+                    >a{
+                        width: 100%;
+                        height: 100%;
+                        background-color: black;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        border: 1px solid black;
+                    }
+                    >i{
+                        width: 50px;
+                        height: 100%;
+                        border: 1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 30px;
+                    }
+                }
+                #disclaimer{
+                    background-color: #efefef;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    *{
+                        margin-left: 10px;
+                        margin-bottom: 0px;
+                    }
+                }
+                .red{
+                    color: #df2b34;
+                }
+            }
+        }
+    }    
+}
+
